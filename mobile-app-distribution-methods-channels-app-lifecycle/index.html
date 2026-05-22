@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The 5 Mobile App Distribution Methods and Channels in the App Lifecycle — Deeploy.App</title>
+  <meta name="description" content="There are a number of different ways of distributing apps for different purposes. Learn about each mobile application distribution use case in detail.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://deeploy.app/mobile-app-distribution-methods-channels-app-lifecycle/">
+  <link rel="icon" href="/assets/images/deeploy-favicon.png" type="image/png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Deeploy<span>.App</span> Store</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/app-distribution-to-testers/">App Distribution</a></li>
+      <li><a href="/in-house-app-distribution/">In-house Distribution</a></li>
+      <li><a href="/app-release/">App Release</a></li>
+      <li><a href="/blog/" class="active">Blog</a></li>
+    </ul>
+    <button class="nav-burger" id="nav-burger" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="4" width="22" height="2" rx="1" fill="white"/><rect y="10" width="22" height="2" rx="1" fill="white"/><rect y="16" width="22" height="2" rx="1" fill="white"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="page-hero-dots"></div>
+  <div class="page-hero-content">
+    <h1>The 5 Mobile App Distribution Methods and Channels in the App Lifecycle</h1>
+  </div>
+</header>
+
+<main>
+  <article class="article">
+    <a href="/blog/" class="post-back">← Back to Blog</a>
+    <div class="post-meta">
+      <span>May 16, 2018</span>
+      <span class="post-meta-sep">·</span>
+      <span>4 min read</span>
+    </div>
+    <img src="../assets/images/mobile-app-distribution-methods.png" alt="Mobile App Distribution Methods" loading="lazy">
+
+    <div class="post-body">
+      <p>We are always talking about the advantages of mobility; however, there is one downside that we are so used to that we tend to overlook. In terms of app delivery and updates, mobile platforms forced us to go back using the obsolete method of binary distribution. Especially on iOS, there are a number of restrictions that makes deployment complicated. For this reason, there are a number of different ways of distributing apps for different purposes. Let’s examine each mobile application distribution use case in detail:</p>
+
+      <h2>1. Distribution During Development</h2>
+      <p>Used by the developers that are actively working on the app.</p>
+      <p>It may be necessary to update the app frequently.</p>
+      <p>The main issue here is to keep the deployment times as short as possible not to impede the development process.</p>
+      <p>For this purpose, Apple requires the use of an iOS Development certificate.</p>
+
+      <h2>2. Distribution for Prereleases</h2>
+      <p>Used for distribution to a small group of specific devices and users, primarily for testing or evaluation of the app.</p>
+      <p>The main issue here is the keeping track of versions and the testers both for iOS and Android. The prerelease distribution of an app must be tightly controlled.</p>
+      <p>For this purpose, Apple requires the use of “Ad Hoc” certificates, which allows distribution to a predefined set of devices. For enterprises, the use of an iOS Enterprise certificate is also applicable, which removes this device restriction.</p>
+      <p>One additional, usually overlooked but important concern is that after testing, the app needs to be resigned with production certificates. This requires going back to the development phase for configuration changes and recompilation. Since this is a manual process, it creates a risk with missing or unspecified changes after testing.</p>
+
+      <h2>3. Distribution for In-House Enterprise Use</h2>
+      <p>Used for distribution to internal stakeholders such as employees or contractors.</p>
+      <p>For this purpose, Apple requires the use of Enterprise certificates for app distribution without going through the App Store.</p>
+      <p>Apple requires that any external party other than the employees must have a binding, protective agreement for internal use of the application. Even if it is a B2B app, the customers still cannot use the app. The only exception is the on-premise or supervised use of the app by the customers in a company-owned device (e.g. in a branch).</p>
+      <p>The main issue here is to manage and monitor the access of to the application in an ongoing manner so that only permitted users have access (e.g. if an employee leaves the company, the access should be cut off immediately).</p>
+      <p>The reason for these restrictions is that iOS Enterprise certificates allow distribution of iOS apps not reviewed by Apple. If these rules are broken (e.g. the app is publicly released, or the certificate is stolen), Apple reserves the right to revoke the certificate or even pursue further action. This makes it crucial to distribute the app with proper methods.</p>
+      <p>Another concern is the prevention of the leaking of the enterprise certificate. Such leaked or stolen certificates are usually used to publish and distribute apps with malicious intent and Apple has no tolerance in such cases.</p>
+      <p>In the same manner, if an Android keystore is obtained somehow, it is possible to create impostor malicious applications. For this reason, keeping the signing identities secure is as important as keeping the application secure.</p>
+
+      <h3>With the Deeploy Enterprise App Store</h3>
+      <ul>
+        <li>You get a cross-platform Enterprise App Store that can be integrated with any identity management system through LDAP, ADFS or oAuth so that you can ensure restricted access compliant with Apple’s policies.</li>
+        <li>No MDM enrollment needed, so any employee or stakeholder can use it with their own devices instantly.</li>
+        <li>You have reports of which users are downloading which apps so that you can have full control over app distribution.</li>
+      </ul>
+
+      <h2>4. Distribution for Public App Stores</h2>
+      <p>Used for distribution to end users through the App Store or Google Play.</p>
+      <p>For this purpose, Apple requires the use of public distribution certificates.</p>
+      <p>For the App Store, the apps must be uploaded from a Mac in a specified way and then they are submitted for review before going live and it may take a couple of days, if not more.</p>
+      <p>For Google Play, there is a <a href="https://appcircle.io/guides/android/android-releases" target="_blank" rel="noopener">reactive review process</a>, but still it may take a couple of hours for the app to be published.</p>
+
+      <h2>5. Distribution for Application Updates</h2>
+      <p>Since the application updates are carried out through application binaries, this is essentially the same with enterprise or public distribution processes.</p>
+      <p>Regardless of the scope of the update, the full binary must be resubmitted to the App Store and Google Play, going through the same review process every time.</p>
+      <p>After the update is published, the users will be prompted that an update is available. In most cases, the app must be downloaded in full and reinstalled over the current installation.</p>
+      <p>It is not possible to force users to download and update the app and multiple versions of an app will be present in the field, causing backend compatibility complexities.</p>
+      <p>Some web-based solutions such as hybrid apps try to overcome this issue, but in return, they sacrifice the native user experience, features and performance no matter how close they are trying to be “like native”.</p>
+    </div>
+  </article>
+</main>
+
+<footer class="footer">
+  <ul class="footer-nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/app-distribution-to-testers/">App Distribution</a></li>
+    <li><a href="/in-house-app-distribution/">In-house Distribution</a></li>
+    <li><a href="/app-release/">App Release</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul>
+  <p class="footer-copy">&copy; <span id="yr"></span> Deeploy.App Store. All rights reserved.</p>
+</footer>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('nav-burger').addEventListener('click', () => document.getElementById('nav-links').classList.toggle('open'));
+</script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In-house App Distribution — Deeploy.App Store</title>
+  <meta name="description" content="In-house app distribution delivers mobile applications privately to employees, contractors, or partners without publishing them to public app stores.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://deeploy.app/in-house-app-distribution/">
+  <meta property="og:title" content="In-house App Distribution — Deeploy.App Store">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://deeploy.app/in-house-app-distribution/">
+  <link rel="icon" href="/assets/images/deeploy-favicon.png" type="image/png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Deeploy<span>.App</span> Store</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/app-distribution-to-testers/">App Distribution</a></li>
+      <li><a href="/in-house-app-distribution/" class="active">In-house Distribution</a></li>
+      <li><a href="/app-release/">App Release</a></li>
+      <li><a href="/blog/">Blog</a></li>
+    </ul>
+    <button class="nav-burger" id="nav-burger" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+        <rect y="4"  width="22" height="2" rx="1" fill="white"/>
+        <rect y="10" width="22" height="2" rx="1" fill="white"/>
+        <rect y="16" width="22" height="2" rx="1" fill="white"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="page-hero-dots"></div>
+  <div class="page-hero-content">
+    <h1>In-House App Distribution</h1>
+    <p>Deliver internal mobile applications securely to employees, contractors, and partners, without the public app stores.</p>
+  </div>
+</header>
+
+<main>
+  <article class="article">
+
+    <h2>What Is In-House App Distribution?</h2>
+    <img src="../assets/images/in-house-app-distribution.png" alt="In-house App Distribution illustration" loading="lazy">
+    <p>In-house app distribution, also known as internal app distribution, describes how organizations deliver mobile applications to a defined group of users, such as employees, contractors, or business partners. These applications are not intended for public audiences and are not published to public app stores. Instead, they are distributed privately within an organization for operational or business purposes.</p>
+    <p>Unlike app distribution to testers, which focuses on short-term pre-release validation, in-house app distribution supports long-term internal use. Internal applications are typically installed, updated, and maintained over time as part of day-to-day business workflows.</p>
+
+    <h2>Why In-House App Distribution Matters</h2>
+    <p>Many organizations rely on mobile applications to support internal operations, including field work, sales, customer support, and internal tooling. In-house app distribution allows these applications to be delivered securely without exposing them to public marketplaces or external users.</p>
+    <p>By using internal distribution, teams can control who has access to an application, manage updates centrally, and reduce dependency on app store review cycles. This approach improves operational efficiency, supports compliance requirements, and enables faster iteration for internal tools that evolve alongside business needs.</p>
+
+    <h2>Who Uses In-House Distribution?</h2>
+    <p>In-house app distribution is used by organizations to deliver internal applications to specific groups based on business needs and access requirements. The intended audience depends on the purpose of the application. Common users of in-house distribution include:</p>
+    <ul class="card-list">
+      <li><strong>IT and enterprise mobility teams</strong>, who manage device enrollment, application access, updates, and lifecycle policies across the organization.</li>
+      <li><strong>Sales and customer support teams</strong>, who rely on internal mobile apps for customer data access, field operations, and day-to-day workflows.</li>
+      <li><strong>Partners and contractors</strong>, who require limited or temporary access to internal applications without exposing them to public distribution channels.</li>
+      <li><strong>Security and compliance teams</strong>, who oversee access control, auditability, and regulatory requirements related to internal application usage.</li>
+    </ul>
+
+    <h2>Common Methods for In-House App Distribution</h2>
+    <img src="../assets/images/in-house-distribution-methods.png" alt="In-house distribution methods" loading="lazy">
+    <p>Directly installing an .ipa or .apk file, which are distribution-ready builds for iOS and Android, is not always practical or permitted for internal use. Platform policies, access control requirements, and device restrictions often make raw file installation unsuitable at scale. In addition, internal applications typically require ongoing version management, meaning users must be able to receive updates when new versions become available.</p>
+    <p>For these reasons, organizations rely on structured distribution methods that support controlled access, update management, and governance. Common approaches include:</p>
+    <ul class="card-list">
+      <li><strong>Mobile Device Management (MDM) solutions</strong>, which allow organizations to centrally manage devices, enforce policies, and distribute internal applications. Tools such as <a href="https://www.microsoft.com/en-us/security/business/microsoft-intune" target="_blank" rel="noopener">Microsoft Intune</a> are commonly used for this purpose.</li>
+      <li><strong><a href="https://developer.apple.com/programs/enterprise/" target="_blank" rel="noopener">Apple Developer Enterprise Program</a></strong>, which enables organizations to distribute iOS applications internally using enterprise certificates, without requiring individual device registration. This method is intended strictly for internal employee use and must comply with Apple’s enterprise distribution policies.</li>
+      <li><strong>Private enterprise app portals</strong>, which provide authenticated access to internal applications through a centralized portal. These portals often include version visibility, access control, and audit logging.</li>
+      <li><strong><a href="https://support.google.com/a/answer/2494992" target="_blank" rel="noopener">Android managed Google Play private apps</a></strong>, which allow organizations to publish private Android applications that are only visible to selected users or groups within an organization through managed Google Play.</li>
+    </ul>
+
+    <h2>In-House App Distribution Flow</h2>
+    <p>While the exact implementation may vary, in-house app distribution generally follows a consistent sequence focused on security, control, and ongoing maintenance:</p>
+    <ol class="steps">
+      <li><strong>Build an internal binary</strong>, a distribution-ready build is created specifically for internal use, typically as an .ipa file for iOS or an .apk or .aab file for Android.</li>
+      <li><strong>Sign the application for internal distribution</strong>, the application is signed using an enterprise certificate (for iOS apps) so it can be installed on authorized devices within the organization.</li>
+      <li><strong>Distribute the application internally</strong>, the signed binary is made available through restricted internal channels such as MDM systems, enterprise app portals, or managed private app stores.</li>
+      <li><strong>Authenticate and control installation</strong>, access to the application is limited to approved users or devices using authentication mechanisms such as device enrollment, user identity verification, or enterprise access policies.</li>
+      <li><strong>Manage updates and access</strong>, updates are delivered centrally as new versions become available, and access is continuously managed to account for role changes, device replacement, or employee offboarding.</li>
+    </ol>
+
+    <h2>Security, Compliance, and Governance</h2>
+    <img src="../assets/images/internal-app-distribution-security.png" alt="Internal app distribution security" loading="lazy">
+    <p>In-house app distribution requires stronger security and governance controls than public app releases or short-term tester distribution. Internal applications often support business-critical workflows and may access sensitive systems or data, making access control and lifecycle management essential. Key considerations include:</p>
+    <ul class="card-list">
+      <li><strong>Access control</strong>, organizations should enforce access control policies to ensure that only authorized users and devices can install and use internal applications. This may include user authentication, role-based access rules, and device enrollment requirements.</li>
+      <li><strong>Certificate governance</strong>, enterprise distribution certificates must be carefully managed throughout their lifecycle. Certificates should be securely stored, renewed on time, and protected against misuse to prevent unexpected app revocation or violations of platform policies.</li>
+      <li><strong>Update and revocation controls</strong>, organizations must be able to push updates, enforce minimum application versions, and revoke access promptly when users change roles or leave the organization.</li>
+      <li><strong>Auditability and compliance</strong>, maintaining audit logs for application access and distribution activity helps organizations meet regulatory requirements and maintain visibility into how internal applications are deployed and used.</li>
+    </ul>
+
+    <h2>Common Mistakes of In-House App Distribution</h2>
+    <p>Organizations often encounter avoidable issues when distributing internal applications at scale. Common mistakes include:</p>
+    <ul class="card-list">
+      <li><strong>Provisioning and signing misconfigurations</strong>, such as relying on ad-hoc profiles with device limits or misusing enterprise certificates, which can lead to installation failures or certificate revocation.</li>
+      <li><strong>Manual update processes</strong>, where users must repeatedly download full application packages, delaying adoption of critical fixes.</li>
+      <li><strong>Exposed installation endpoints</strong>, including unsecured manifests or download links that allow unauthorized access to internal applications.</li>
+      <li><strong>Weak access and revocation controls</strong>, leaving former employees, contractors, or lost devices with continued access to internal apps.</li>
+      <li><strong>Lack of lifecycle planning</strong>, treating internal applications like temporary test builds instead of long-term operational tools.</li>
+      <li><strong>Missing auditability and governance</strong>, resulting in limited visibility into who distributed builds, who has access, and when changes occurred.</li>
+    </ul>
+
+    <h2>Managed In-House Distribution Platforms</h2>
+    <p>As internal application portfolios grow in size and scope, some organizations adopt managed in-house distribution platforms to reduce manual processes and improve operational consistency. These platforms can help centralize internal app delivery, enforce access controls, manage application updates, and maintain audit logs across teams and devices. Solutions such as <a href="https://appcircle.io/enterprise-app-store" target="_blank" rel="noopener">Appcircle</a> are sometimes used in these scenarios to support in-house distribution as part of a broader internal mobile delivery workflow.</p>
+
+    <h2>FAQs</h2>
+    <div class="faq" id="faq">
+
+      <div class="faq-item">
+        <button class="faq-q">What is required for iOS in-house app distribution?<span class="faq-icon">+</span></button>
+        <div class="faq-a">To distribute iOS applications internally, organizations must enroll in the Apple Developer Enterprise Program. This program is intended for internal employee use only. Organizations create an enterprise distribution certificate and in-house provisioning profile to sign applications, which allows apps to be installed without going through App Store review.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">How do organizations distribute private Android apps internally?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Private Android apps are typically distributed using Managed Google Play, which allows organizations to publish apps that are only visible to selected users or groups. These apps can then be deployed to managed devices using enterprise mobility or device management solutions.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Is in-house app distribution allowed by Apple?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Yes, Apple allows in-house app distribution through the Apple Developer Enterprise Program, provided that applications are distributed only to employees within the organization. Distributing enterprise-signed apps outside the organization violates Apple's policies and may result in certificate revocation.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Do in-house apps require App Store review?<span class="faq-icon">+</span></button>
+        <div class="faq-a">No. In-house applications distributed through enterprise programs do not go through App Store review. However, organizations are still responsible for ensuring that internal apps comply with platform security, privacy, and usage policies.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">How are updates delivered to internal users?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Updates are typically delivered through managed distribution channels such as MDM systems, enterprise app portals, or private app stores. These systems allow organizations to notify users of new versions, enforce minimum versions, or push updates automatically. Some teams also integrate internal distribution into CI or mobile delivery workflows using platforms such as <a href="https://docs.appcircle.io/enterprise-app-store/in-app-updates" target="_blank" rel="noopener">Appcircle</a> to streamline build, signing, and update processes.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">What happens if an enterprise distribution certificate is revoked?<span class="faq-icon">+</span></button>
+        <div class="faq-a">If an enterprise certificate is revoked, all applications signed with that certificate may stop functioning. This can disrupt internal operations, which is why careful certificate management and policy compliance are critical for in-house distribution.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Are in-house apps limited to managed devices?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Not always, but many organizations restrict in-house app access to managed or enrolled devices to improve security and compliance. Device management helps enforce policies, control updates, and revoke access when necessary.</div>
+      </div>
+
+    </div>
+
+  </article>
+</main>
+
+<footer class="footer">
+  <ul class="footer-nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/app-distribution-to-testers/">App Distribution</a></li>
+    <li><a href="/in-house-app-distribution/">In-house Distribution</a></li>
+    <li><a href="/app-release/">App Release</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul>
+  <p class="footer-copy">&copy; <span id="yr"></span> Deeploy.App Store. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('nav-burger').addEventListener('click', () => {
+    document.getElementById('nav-links').classList.toggle('open');
+  });
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer's Guide to Mobile App Security in 8 Steps — Deeploy.App</title>
+  <meta name="description" content="8 steps and best practices to achieve better mobile app security for iOS, Android and any other mobile application development platforms.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://deeploy.app/developers-guide-to-mobile-app-security-for-ios-android/">
+  <link rel="icon" href="/assets/images/deeploy-favicon.png" type="image/png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Deeploy<span>.App</span> Store</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/app-distribution-to-testers/">App Distribution</a></li>
+      <li><a href="/in-house-app-distribution/">In-house Distribution</a></li>
+      <li><a href="/app-release/">App Release</a></li>
+      <li><a href="/blog/" class="active">Blog</a></li>
+    </ul>
+    <button class="nav-burger" id="nav-burger" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="4" width="22" height="2" rx="1" fill="white"/><rect y="10" width="22" height="2" rx="1" fill="white"/><rect y="16" width="22" height="2" rx="1" fill="white"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="page-hero-dots"></div>
+  <div class="page-hero-content">
+    <h1>Developer's Guide to Mobile App Security in 8 Steps</h1>
+  </div>
+</header>
+
+<main>
+  <article class="article">
+    <a href="/blog/" class="post-back">← Back to Blog</a>
+    <div class="post-meta">
+      <span>April 2, 2015</span>
+      <span class="post-meta-sep">·</span>
+      <span>6 min read</span>
+    </div>
+    <img src="../assets/images/developers-guide-app-security.png" alt="Developer's Guide to Mobile App Security" loading="lazy">
+
+    <div class="post-body">
+      <p>Regardless of which framework, mobile operating system or methodology you use for mobile application development, security is a critical issue. Like iOS and Android, different mobile platforms may have different tools and solutions for security, but the main questions are the same. Enterpise mobile application development platforms like Smartface also offer additional security functionalities to ease the process of mobile application security.</p>
+
+      <h2>What is app security?</h2>
+      <p>App security is taking enough amount of protection against attacks. There are many vulnerabilities that allow hackers or malicious people to gain access, it is important to identify those vulnerabilities and fix them.</p>
+
+      <h2>How do you identify the vulnerabilities in mobile applications?</h2>
+      <p>There are many ways and many approaches to identify them. The best way to identify them is put the application to a proven Application Security Test (AST). This is a long process and based on the business model and the need, it may cost more time and resources than anticipated. Depending on the mobile security needs need developers may follow some security app development approaches and use third party tools.</p>
+
+      <h2>What is the decision criteria for preventive security measures for mobile apps?</h2>
+      <p>It mostly depends on the available resources. For most of the enterprises, time to market is much more important, so they choose best tools to get the highest security that money can buy. SMBs prefer to have known protection techniques applied to their product, they avoid higher costs with customized options. Sometimes security means decreased usability in a mobile application or vice versa. Such as the fingerprint authentication provided nowadays with the flagship devices (such as iPhone 5S, iPhone 6 and Samsung Galaxy S5 and Galaxy S6). Fingerprint authentication is not as secure as it seems and can be easily cracked/spoofed. Some companies may accept related vulnerabilities and may opt in to authenticate their customers through fingerprint.</p>
+
+      <h2>What things are at risk?</h2>
+      <p>Mobile application development is different from server-side programming; on server-side programming, codes are hidden from the user in most cases, and user cannot alter them; however, in mobile applications, there are both client application and server side services. It means that both of these have to be secured. Below are the items to be secured in order to have a complete protection on the client side:</p>
+      <ul>
+        <li>Authentication, the way the users log-in</li>
+        <li>Data at rest, stored data on device</li>
+        <li>Data transfer, received and transmitted data</li>
+        <li>Code security, the app code in the client</li>
+        <li>App distribution, having the app distributed from a trusted source</li>
+        <li>Memory integrity &amp; security, debugging the application</li>
+        <li>Application tampering, codes of the app should not be altered</li>
+        <li>Version check, some older versions may cause vulnerabilities</li>
+      </ul>
+
+      <h2>How to authenticate mobile applications?</h2>
+      <p>Use two-factor authentication for an optimal level of security. This requires two things in order to authenticate: “what you know” , is the password (needs to be secret) and “what you have” , will be the device after activation, which the activation data should be protected from cloning.</p>
+
+      <h2>How to secure data storage in mobile applications?</h2>
+      <p>The sensitive data on device, regardless of the storage location, has to be encrypted. The encryption key also has to be secured within the code or has to be retrieved from server when app starts. Symmetric or asymmetric encryptions are acceptable; if attacker can guess the data stored then it is prone to known text attacks. In order to harden the security, schema of data also has to be obfuscated. The temporary data has to be deleted as soon as they are not needed. If a device is compromised, it is important to wipe the all data based on some local triggers and/or server calls.</p>
+
+      <h2>How to secure data transfer?</h2>
+      <p>Basically it is the communication between server and the client app. Most of the communication flows over web services, which rely on HTTP protocol. Use SSL (https) within the communication. The certificate store is important, it defines which certificate is to be trusted. It is possible to having the device SSL certificate store to be compromised. In that case, the app is prone to man in the middle attacks or eavesdropping. Embed the public key of the server within the app and do not change it. When the certificate on the server is to be replaced; this means that the mobile app requires an update.</p>
+
+      <h2>How to ensure code is secure?</h2>
+      <p>First of all, it depends on programming language. If the language is a run-time based interpreted language, then the apps written in these languages should be encrypted and stored in this way (such as JavaScript). They are decrypted on the run-time by the app. Some other languages are to be obfuscated (such as Java). C/C++ code does not require obfuscation or encryption; it is directly compiled to assembly, reverse engineering/decompiling mobile applications written in Objective-C or C++ does not provide proper information to extract.</p>
+
+      <h2>How to distribute apps?</h2>
+      <p>In the current app distribution methods, the apps does not always keep the information where it has been downloaded. Rather than coding, it is about teaching the customers to install their apps only from designated app stores. It is especially important for Android users to avoid pirated/cracked apk files as they may contain malicious code. If a user downloads and installs the fake or modified app and uses it (such as trying to login), this means attackers gain may gain access to sensitive information (the user name and password).</p>
+
+      <h2>How to ensure data in memory is secure?</h2>
+      <p>It is possible to attach a debugger to app and listen &amp; modify the values in memory. It can make the app login without password (modify data or alter the program flow) or collect sensitive information. Do not keep sensitive data in memory more than needed, delete or change it after it was used. The best protection would be using anti-debugger tools for mobile apps to prevent any debugger to connect the app.</p>
+
+      <h2>How to ensure app is not tampered?</h2>
+      <p>Tampering can be done on two things: app code or app data. It is similar to memory integrity &amp; security issue; main difference is that this type of attack is not done during run-time. Attacker may change the installation package, insert its own code/data or alter the code/data. An integrity check has to be made for the app package, the best way would be an online check made by some privileged user.</p>
+
+      <h2>How to make a version check?</h2>
+      <p>Version check on app startup should be made in order to ensure user is using a valid version of the client app. Updates should be classified as “optional” or “mandatory”. If there is a newer version of the app, client app displays a dialog for updating. Optional updates can be dismissed and user can continue, however in mandatory updates, the app must be updated before use. If an issue (such as flows or logic in business model) in older version may lead to security vulnerability, it has to be a mandatory update.</p>
+
+      <h2>What are the best practices?</h2>
+      <p>First determine how much of security is enough for the app. Use known brand tools to provide the necessary amount of security within the app. If not, there is always the possibility to miss things during development. Using the tools, with their requirement of coding they put the flow to secure way. Most of the security flaws are introduced with business flows rather than coding. if proper methods are used. It’s better to make security reviews when the code is being reviewed for functionality.</p>
+    </div>
+  </article>
+</main>
+
+<footer class="footer">
+  <ul class="footer-nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/app-distribution-to-testers/">App Distribution</a></li>
+    <li><a href="/in-house-app-distribution/">In-house Distribution</a></li>
+    <li><a href="/app-release/">App Release</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul>
+  <p class="footer-copy">&copy; <span id="yr"></span> Deeploy.App Store. All rights reserved.</p>
+</footer>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('nav-burger').addEventListener('click', () => document.getElementById('nav-links').classList.toggle('open'));
+</script>
+</body>
+</html>

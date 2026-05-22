@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is NoOps and How to Achieve NoOps in Mobile App Development? — Deeploy.App</title>
+  <meta name="description" content="For a true NoOps approach in mobility, it is important to keep the DevOps chain intact with a fully integrated mobility platform in the cloud.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://deeploy.app/what-is-noops-devops-mobile-app-dev/">
+  <link rel="icon" href="/assets/images/deeploy-favicon.png" type="image/png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Deeploy<span>.App</span> Store</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/app-distribution-to-testers/">App Distribution</a></li>
+      <li><a href="/in-house-app-distribution/">In-house Distribution</a></li>
+      <li><a href="/app-release/">App Release</a></li>
+      <li><a href="/blog/" class="active">Blog</a></li>
+    </ul>
+    <button class="nav-burger" id="nav-burger" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="4" width="22" height="2" rx="1" fill="white"/><rect y="10" width="22" height="2" rx="1" fill="white"/><rect y="16" width="22" height="2" rx="1" fill="white"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="page-hero-dots"></div>
+  <div class="page-hero-content">
+    <h1>What is NoOps and How to Achieve NoOps in Mobile App Development?</h1>
+  </div>
+</header>
+
+<main>
+  <article class="article">
+    <a href="/blog/" class="post-back">← Back to Blog</a>
+    <div class="post-meta">
+      <span>April 11, 2018</span>
+      <span class="post-meta-sep">·</span>
+      <span>3 min read</span>
+    </div>
+    <img src="../assets/images/what-is-noops.png" alt="What is NoOps" loading="lazy">
+
+    <div class="post-body">
+      <p>As enterprises are embracing DevOps and realizing its benefits, especially in their well-established software stacks, they are challenged with another question with the increasing prominence of DevOps in the cloud applications supported with automation.</p>
+
+      <p>The question can be expressed as “why don’t we fully streamline the DevOps processes even further since it is more or less consist of tasks in a highly structured flow?”</p>
+
+      <p>The primary hurdle is the presence of physical hardware that requires maintenance in any case, but moving to the cloud and taking advantage of SaaS (Software as a Service) or PaaS (Platform as a Service) products eliminates this layer of complexity and automated DevOps starts to make more sense. And this concept actually has a recently coined name of <a href="https://appcircle.io/blog/what-is-noops-and-how-to-achieve-noops-in-mobile-app-development" target="_blank" rel="noopener">NoOps</a>, which is gaining foothold in parallel with the cloud adoption.</p>
+
+      <h2>What is NoOps?</h2>
+      <p>In the simplest way, NoOps can be considered as integrating and automating (wherever possible) DevOps processes. In this sense, it is perceived as an alternative to DevOps or sometimes even as “DevOps” killer, but, it is more like an extension and further streamlining of the DevOps concept. The term is first identified by Forrester and they emphasize that:</p>
+
+      <blockquote>“NoOps means that application developers will never have to speak with an operations professional again.”</blockquote>
+
+      <p>Indeed, when NoOps is implemented and used in the right way and in the right conditions, it is as beneficial and productive as the name suggests. However, it requires the right tools and preferably a full cloud presence and it should not be considered as a silver bullet for DevOps needs.</p>
+
+      <p>With the advantage of the cloud, NoOps eliminates the hassle of integration and upload/download operations.</p>
+
+      <h2>DevOps vs. NoOps</h2>
+      <p>There are certain fields where you have an established DevOps culture and an “Ops” team, such as maintaining critical backend applications, which may include dealing with locally installed hardware and software. However, in emerging technologies such as mobility, it is not as easy as to find and maintain internal resources for DevOps or you might not have the operations experience that you have already gained in backend applications for decades.</p>
+
+      <h2>DevOps in Enterprise Mobility</h2>
+      <p>Due to its nature, mobility has its own DevOps challenges:</p>
+      <ul>
+        <li>Requiring a binary to be installed on mobile devices</li>
+        <li>Device and operating system fragmentation making coding, testing and distribution processes demanding</li>
+        <li>Binary distribution regulations to mobile devices</li>
+        <li>Strict app signing requirements</li>
+        <li>Issues with keeping signing identities safe, secure and accessible</li>
+        <li>Complex app signing and submission processes that force the use of specific hardware and software.</li>
+        <li>Lengthy and complex store submission and review processes causing issues in maintenance of the apps after production</li>
+      </ul>
+
+      <p>For this reason, we highlight the fact that mobile app development is only the tip of the iceberg and the lifecycle management of mobile apps (the “Ops” part) is as important as the development itself, if not more.</p>
+
+      <h2>Switching From DevOps to NoOps in Mobile App Development</h2>
+      <p>Achieving NoOps in mobile app development is more difficult but also more important than many other fields due to the problems outlined in the previous section. For a true NoOps approach in mobility, it is important to be able to prevent the DevOps chain breaking from development to production, which can be achieved with a fully integrated mobility platform in the cloud.</p>
+    </div>
+  </article>
+</main>
+
+<footer class="footer">
+  <ul class="footer-nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/app-distribution-to-testers/">App Distribution</a></li>
+    <li><a href="/in-house-app-distribution/">In-house Distribution</a></li>
+    <li><a href="/app-release/">App Release</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul>
+  <p class="footer-copy">&copy; <span id="yr"></span> Deeploy.App Store. All rights reserved.</p>
+</footer>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('nav-burger').addEventListener('click', () => document.getElementById('nav-links').classList.toggle('open'));
+</script>
+</body>
+</html>

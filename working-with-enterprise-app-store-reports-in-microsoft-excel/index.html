@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working with the Enterprise App Store Reports in Microsoft Excel — Deeploy.App</title>
+  <meta name="description" content="This document outlines how to process Enterprise App Store CSV reports in Microsoft Excel for further data operations.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://deeploy.app/working-with-enterprise-app-store-reports-in-microsoft-excel/">
+  <link rel="icon" href="/assets/images/deeploy-favicon.png" type="image/png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Deeploy<span>.App</span> Store</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/app-distribution-to-testers/">App Distribution</a></li>
+      <li><a href="/in-house-app-distribution/">In-house Distribution</a></li>
+      <li><a href="/app-release/">App Release</a></li>
+      <li><a href="/blog/" class="active">Blog</a></li>
+    </ul>
+    <button class="nav-burger" id="nav-burger" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="4" width="22" height="2" rx="1" fill="white"/><rect y="10" width="22" height="2" rx="1" fill="white"/><rect y="16" width="22" height="2" rx="1" fill="white"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="page-hero-dots"></div>
+  <div class="page-hero-content">
+    <h1>Working with the Enterprise App Store Reports in Microsoft Excel</h1>
+  </div>
+</header>
+
+<main>
+  <article class="article">
+    <a href="/blog/" class="post-back">← Back to Blog</a>
+    <div class="post-meta">
+      <span>March 21, 2018</span>
+      <span class="post-meta-sep">·</span>
+      <span>2 min read</span>
+    </div>
+    <img src="../assets/images/enterprise-app-store-excel-reports.png" alt="Enterprise App Store Excel Reports" loading="lazy">
+
+    <div class="post-body">
+      <p>The Enterprise App Store reports are exported in standard CSV format that can be processed with various spreadsheet applications. Due to the spreadsheet interpretation and locale differences across regions and operating systems, CSV format is preferred for global compatibility.</p>
+      <p>This document outlines how to process the CSV file in Microsoft Excel to be used in further data operations.</p>
+
+      <h2>Starting the Text to Columns Wizard</h2>
+      <p>The CSV file produced is in a comma-separated format. Some spreadsheet applications can parse this file automatically, but Microsoft Excel leaves the parsing up to the user through the "Text to Columns" feature.</p>
+      <p>To start the wizard, open the CSV file in Excel and select the first column by pressing the column name.</p>
+      <p>From the <strong>Data</strong> tab, press the <strong>Text to Columns</strong> button.</p>
+      <img class="post-screenshot" src="../assets/images/excel-text-to-columns-button.png" alt="Excel Text to Columns button" loading="lazy">
+
+      <p>"Convert Text to Columns Wizard" will be displayed.<br>In the first step, select "Delimited" and press "Next".</p>
+      <img class="post-screenshot" src="../assets/images/excel-text-to-columns-step-1.png" alt="Excel Text to Columns Wizard step 1" loading="lazy">
+
+      <p>In the second step, select "Comma" under "Delimiters". You will see the preview of the data below.<br>If everything looks good, press "Next".</p>
+      <img class="post-screenshot" src="../assets/images/excel-text-to-columns-step-2.png" alt="Excel Text to Columns Wizard step 2" loading="lazy">
+
+      <p>In the final step, we will ensure that the date and time are processed correctly according to your locale and also prevent the version field automatically parsed as number.</p>
+      <ul>
+        <li>First, click on the <strong>App Version</strong> column and select <strong>Text</strong> as the "Column data format". Your selection will appear on top of the column preview.</li>
+        <li>If you encounter similar parsing issues with other columns, you may also specify their format as text to keep the data intact. You can select multiple columns for this purpose.</li>
+        <li>Then, select the <strong>Date</strong> column and specify <strong>Date: MDY</strong> as the "Column data format". This ensures that the US date format is converted to the locale used in your Excel instance.</li>
+      </ul>
+      <p>The column formats should look like below before finishing the wizard.<br>If everything looks good, press <strong>Finish</strong>.</p>
+      <img class="post-screenshot" src="../assets/images/excel-text-to-columns-step-3.png" alt="Excel Text to Columns Wizard step 3" loading="lazy">
+
+      <p>The file will now be parsed in your own locale. In the example below, the data is shown in European format.<br>Please note that the time field may also require additional formatting after the wizard is complete, depending on the locale.</p>
+      <img class="post-screenshot" src="../assets/images/excel-text-to-columns-result.png" alt="Excel parsed CSV result" loading="lazy">
+
+      <h2>Tips</h2>
+      <ul>
+        <li>If there is an issue, using the undo command after the wizard will return the file to its initial stage.</li>
+        <li>To automate these steps, you can also record or develop an Excel macro.</li>
+        <li>Don't forget to save your file in Excel format to preserve your changes.</li>
+      </ul>
+    </div>
+  </article>
+</main>
+
+<footer class="footer">
+  <ul class="footer-nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/app-distribution-to-testers/">App Distribution</a></li>
+    <li><a href="/in-house-app-distribution/">In-house Distribution</a></li>
+    <li><a href="/app-release/">App Release</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul>
+  <p class="footer-copy">&copy; <span id="yr"></span> Deeploy.App Store. All rights reserved.</p>
+</footer>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('nav-burger').addEventListener('click', () => document.getElementById('nav-links').classList.toggle('open'));
+</script>
+</body>
+</html>

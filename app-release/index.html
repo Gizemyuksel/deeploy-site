@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Release — Deeploy.App Store</title>
+  <meta name="description" content="App release is the process of publishing a mobile app to public app stores, making it available to users after review and approval.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://deeploy.app/app-release/">
+  <meta property="og:title" content="App Release — Deeploy.App Store">
+  <meta property="og:description" content="App release is the process of publishing a mobile app to public app stores, making it available to users after review and approval.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://deeploy.app/app-release/">
+  <link rel="icon" href="/assets/images/deeploy-favicon.png" type="image/png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Deeploy<span>.App</span> Store</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/app-distribution-to-testers/">App Distribution</a></li>
+      <li><a href="/in-house-app-distribution/">In-house Distribution</a></li>
+      <li><a href="/app-release/" class="active">App Release</a></li>
+      <li><a href="/blog/">Blog</a></li>
+    </ul>
+    <button class="nav-burger" id="nav-burger" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+        <rect y="4"  width="22" height="2" rx="1" fill="white"/>
+        <rect y="10" width="22" height="2" rx="1" fill="white"/>
+        <rect y="16" width="22" height="2" rx="1" fill="white"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="page-hero-dots"></div>
+  <div class="page-hero-content">
+    <h1>App Release</h1>
+    <p>The final stage of the mobile app lifecycle, publishing to public app stores for the world to discover and download.</p>
+  </div>
+</header>
+
+<main>
+  <article class="article">
+
+    <h2>What Is App Release?</h2>
+    <img class="article-image-sm" src="../assets/images/app-release-hero.png" alt="App Release illustration" loading="lazy">
+    <p>App release, also referred to as public app distribution, is the process of making a mobile application publicly available to end users through an official app store. Once an application is released, it can be discovered, downloaded, and installed by anyone through platforms such as the Apple App Store or Google Play. Public app release typically follows a formal submission and review process defined by the app store.</p>
+
+    <h2>App Release vs Tester Distribution vs In-House Distribution</h2>
+    <p>App release differs fundamentally from other distribution models in terms of audience, access, and intent. App release makes an application publicly accessible to all users through an app store. <a href="/app-distribution-to-testers/">Tester distribution</a> delivers pre-release builds to a limited group of internal or external testers for validation and feedback. <a href="/in-house-app-distribution/">In-house distribution</a> is used to deliver internal applications privately to employees, partners, or contractors without public exposure.</p>
+
+    <h2>Why App Release Matters</h2>
+    <p>App release represents the final stage of the mobile application lifecycle, where an application transitions from development and validation into real-world use. At this stage, the application becomes visible to end users and is subject to public ratings, reviews, and platform policies. A well-managed app release is critical for user trust, discoverability, and long-term product success.</p>
+
+    <div class="tldr">
+      <p><strong>TL;DR:</strong> App release is the process of publishing a mobile application to an app store for public access, making it available to end users after development, testing, and internal validation are complete.</p>
+    </div>
+
+    <h2>Public App Distribution Channels</h2>
+    <p>Public app distribution is carried out through official app stores operated by platform providers. These channels control application visibility, distribution, updates, and compliance through formal submission and review processes. The primary public distribution channels include:</p>
+    <ul class="card-list">
+      <li><strong><a href="https://developer.apple.com/app-store/" target="_blank" rel="noopener">Apple App Store</a></strong>, Apple’s official app marketplace for iOS and iPadOS applications. Apps distributed through the App Store must comply with Apple’s App Store Review Guidelines and are reviewed before becoming publicly available.</li>
+      <li><strong><a href="https://developer.android.com/distribute/google-play" target="_blank" rel="noopener">Google Play</a></strong>, Google’s official distribution platform for Android applications. Google Play provides public app discovery, staged rollouts, update management, and policy enforcement through the Play Console.</li>
+      <li><strong><a href="https://developer.huawei.com/consumer/en/appgallery/" target="_blank" rel="noopener">Huawei AppGallery</a></strong>, Huawei’s official app distribution platform, primarily used in regions where Google Play services are not available. AppGallery has its own submission, review, and compliance requirements.</li>
+    </ul>
+    <p>Unlike tester distribution or in-house distribution, public app distribution channels make applications discoverable to all users and subject them to platform-level review, policy enforcement, and public feedback.</p>
+
+    <h2>App Release Workflow</h2>
+    <p>Public app release follows a structured workflow designed to ensure quality, compliance, and visibility across app stores. While exact steps may vary by platform, the overall process typically includes the following stages:</p>
+    <ol class="steps">
+      <li><strong>Build a release binary</strong>, a production-ready binary is generated for release, such as an .ipa file for iOS or an .aab or .apk file for Android.</li>
+      <li><strong>Signing and versioning</strong>, the application is signed with the appropriate distribution credentials, and a clear versioning strategy is applied to identify the release uniquely across updates.</li>
+      <li><strong>Store metadata preparation</strong>, app store metadata is prepared, including the app name, description, screenshots, icons, privacy disclosures, and other information required for store listing and review.</li>
+      <li><strong>Submission to the app store</strong>, the release is submitted to the relevant app store, such as the Apple App Store or Google Play, either manually or through an automated release workflow.</li>
+      <li><strong>App review</strong>, submitted applications go through a review process in which the app store evaluates functionality, security, content, and policy compliance before public availability.</li>
+      <li><strong>Approval</strong>, if the application meets the platform’s guidelines, it is approved for release. If issues are found, the submission may be rejected and require changes before resubmission.</li>
+      <li><strong>Release and rollout</strong>, once approved, the application can be released to all users immediately or rolled out gradually using phased or staged release options.</li>
+    </ol>
+
+    <h2>How App Store Review and Approval Works</h2>
+    <img src="../assets/images/app-review-process.png" alt="App Review Process" loading="lazy">
+    <p>Before an application can be publicly released, it must pass the review and approval process defined by each app store. These reviews are designed to ensure apps meet platform requirements related to security, privacy, functionality, and content.</p>
+    <h3>Apple App Store Review</h3>
+    <p>Apps submitted to the Apple App Store are reviewed according to Apple’s App Store Review Guidelines. Apple evaluates applications for technical stability, user experience, content compliance, and privacy practices.</p>
+    <ul class="card-list">
+      <li>Review times typically range from one to two days, though complex submissions may take longer.</li>
+      <li>If an app is rejected, Apple provides detailed feedback explaining the reason for rejection.</li>
+      <li>Developers can address the issues and resubmit the app for another review.</li>
+    </ul>
+    <p>Check <a href="https://developer.apple.com/app-store/review/guidelines/" target="_blank" rel="noopener">here for official Apple review guidelines</a>.</p>
+
+    <h3>Google Play Review</h3>
+    <p>Apps published to Google Play go through a review process that checks compliance with Google Play policies, including content rules, security requirements, and data usage disclosures.</p>
+    <ul class="card-list">
+      <li>Reviews are performed after submission through the Google Play Console.</li>
+      <li>If issues are identified, developers receive a notification explaining what needs to be fixed.</li>
+      <li>Once approved, the app can be published automatically or released according to the configured rollout strategy.</li>
+    </ul>
+    <p>Google Play review timelines can vary and may take several days, especially for new developer accounts or apps with sensitive permissions.</p>
+    <p>Check <a href="https://play.google/developer-content-policy/" target="_blank" rel="noopener">here for official Google Play review policies</a>.</p>
+
+    <h2>Best Practices for App Store Releases</h2>
+    <p>A well-managed app store release reduces rejection risk, improves release reliability, and ensures a smoother experience for end users. Common best practices include:</p>
+    <ul class="card-list">
+      <li><strong>Proper signing and re-signing management</strong>, ensure release builds are signed with the correct distribution certificates and profiles. Misconfigured signing is a frequent cause of submission failures and last-minute delays.</li>
+      <li><strong>Clear version and build number strategy</strong>, use consistent versioning and increment build numbers correctly for each submission. This helps track releases, manage rollbacks, and avoid app store submission errors.</li>
+      <li><strong>Thorough pre-release validation</strong>, validate release builds through tester distribution or internal testing before submission to catch critical issues early and reduce rejection risk.</li>
+      <li><strong>Accurate and complete store metadata</strong>, prepare app descriptions, screenshots, icons, and privacy disclosures carefully. Incomplete or misleading metadata is a common reason for review rejection.</li>
+      <li><strong>Phased or staged rollouts</strong>, use phased releases where supported to gradually expose new versions to users, monitor stability, and limit the impact of potential issues.</li>
+      <li><strong>Post-release monitoring and response</strong>, monitor crashes, user feedback, and store reviews immediately after release to identify and address issues quickly.</li>
+      <li><strong>Automated release workflows using CI/CD</strong>, automating build, signing, and submission steps reduces manual errors and improves consistency across releases. Some teams integrate app store releases into CI or mobile delivery workflows using platforms such as <a href="https://appcircle.io/publish-to-stores" target="_blank" rel="noopener">Appcircle</a> or Fastlane as part of their release process.</li>
+    </ul>
+
+    <h2>FAQs</h2>
+    <div class="faq" id="faq">
+
+      <div class="faq-item">
+        <button class="faq-q">How long does app review take?<span class="faq-icon">+</span></button>
+        <div class="faq-a">App review timelines vary by platform. On the Apple App Store, reviews often complete within one to two days, although complex submissions may take longer. On Google Play, reviews can take several days, especially for new developer accounts or apps with sensitive permissions.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Are app releases reversible?<span class="faq-icon">+</span></button>
+        <div class="faq-a">No. Once an application version is publicly released and installed, it cannot be removed from users’ devices remotely. Reversing issues typically requires submitting an updated version or disabling affected functionality through backend controls.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Can app releases be rolled back?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Public releases cannot be fully rolled back once users have installed the app. However, teams can mitigate issues by releasing a new version with fixes, halting staged rollouts, or unpublishing the app from the store to prevent new downloads.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Can app releases be automated?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Yes. Many teams automate app releases as part of their CI or mobile delivery workflows to reduce manual errors and improve consistency. Automation can handle build creation, signing, metadata preparation, and submission. Some organizations use platforms such as Appcircle to integrate app store releases into a broader <a href="https://docs.appcircle.io/publish-to-stores-module" target="_blank" rel="noopener">release pipeline</a>.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">What happens if an app is rejected?<span class="faq-icon">+</span></button>
+        <div class="faq-a">If an app is rejected, the app store provides feedback explaining the reason. Developers must address the identified issues and resubmit the app for review. Rejections do not prevent future submissions, but repeated violations may delay approval.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">What do "Pending Developer Release" or "Ready for Distribution" mean?<span class="faq-icon">+</span></button>
+        <div class="faq-a">These statuses indicate that an app has passed review and is approved by the app store. “Pending Developer Release” means the app is approved but not yet released to users. “Ready for Distribution” indicates the app is approved and eligible to be published according to the configured release settings.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Can apps be released gradually to users?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Yes. Both major app stores support staged or phased rollouts, allowing teams to release an app to a percentage of users first. This approach helps monitor stability and reduce the impact of potential issues before full release.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Do app updates go through review again?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Yes. Most app updates are reviewed before becoming publicly available. However, review times for updates are often shorter than for first-time submissions, depending on the scope of changes.</div>
+      </div>
+
+    </div>
+
+  </article>
+</main>
+
+<footer class="footer">
+  <ul class="footer-nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/app-distribution-to-testers/">App Distribution</a></li>
+    <li><a href="/in-house-app-distribution/">In-house Distribution</a></li>
+    <li><a href="/app-release/">App Release</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul>
+  <p class="footer-copy">&copy; <span id="yr"></span> Deeploy.App Store. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('nav-burger').addEventListener('click', () => {
+    document.getElementById('nav-links').classList.toggle('open');
+  });
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>
